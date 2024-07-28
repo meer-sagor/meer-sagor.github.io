@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "deploy": "build && npx gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.7.1",

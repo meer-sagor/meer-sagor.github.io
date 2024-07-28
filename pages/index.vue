@@ -1,9 +1,5 @@
 <script lang="ts" setup>
 
-
-useHead({
-    title: 'Meer Sagor'
-})
 </script>
 
 <template>
