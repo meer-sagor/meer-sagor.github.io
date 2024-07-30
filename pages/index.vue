@@ -3,5 +3,6 @@
 </script>
 
 <template>
-    <h1>Welcome</h1>
+    <Welcome/>
+    <About/>
 </template>

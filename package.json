@@ -19,8 +19,8 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "@hypernym/nuxt-gsap": "^2.4.2",
     "@nuxt/eslint": "^0.3.13",
-    "@nuxtjs/html-validator": "^1.8.2",
-    "@hypernym/nuxt-gsap": "^2.4.2"
+    "@nuxtjs/html-validator": "^1.8.2"
   }
 }
