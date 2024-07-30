@@ -2385,20 +2385,10 @@ base64-js@^1.1.2, base64-js@^1.3.0, base64-js@^1.3.1:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
-bezier-easing@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/bezier-easing/-/bezier-easing-2.1.0.tgz#c04dfe8b926d6ecaca1813d69ff179b7c2025d86"
-  integrity sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==
-
 binary-extensions@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.3.0.tgz#f6e14a97858d327252200242d4ccfe522c445522"
   integrity sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==
-
-bindall-standalone@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/bindall-standalone/-/bindall-standalone-1.0.5.tgz#f7430388f1c7f9a9ade0fc75a400e710f6692a1d"
-  integrity sha512-HDI7YBWXVJk/eoGz+e4lYQQJnYp1ZHcUvAY71lVptLMhQnDm86vD73AGPw2qIlgYR3P0bjmoAcXiA8qhFejBhA==
 
 bindings@^1.4.0:
   version "1.5.0"
@@ -4558,11 +4548,6 @@ lazystream@^1.0.0:
   dependencies:
     tslib "^2.4.0"
 
-lethargy@^1.0.2:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/lethargy/-/lethargy-1.0.9.tgz#138b0ae384d015c5233e0cc1eeba4d089af3c58b"
-  integrity sha512-nFM8blpCF9rqIL5mRAaTGc78W8oQixVtsD86jbEPvcI13+lDUYJf3R7DZQQL7tCiBpbGpGKMX2gwJFO9hiaOkg==
-
 lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
@@ -4635,15 +4620,6 @@ locate-path@^7.2.0:
   integrity sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==
   dependencies:
     p-locate "^6.0.0"
-
-locomotive-scroll@^4.1.4:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/locomotive-scroll/-/locomotive-scroll-4.1.4.tgz#a6d83ba3c07a9c51fc1a6d95b4be614d4dc5aad2"
-  integrity sha512-6i98cFF2SKg6wIPpwVPuo2FG8qL3USsdDeew78TEYZyLoqleMWNfkSDpWA6mPym4dOfTIBXc678VmGlkgx3fTA==
-  dependencies:
-    bezier-easing "^2.1.0"
-    smoothscroll-polyfill "^0.4.4"
-    virtual-scroll "^1.5.2"
 
 lodash.castarray@^4.4.0:
   version "4.4.0"
@@ -5140,14 +5116,6 @@ nuxt-icon@^0.6.10:
     "@iconify/vue" "^4.1.1"
     "@nuxt/devtools-kit" "^1.1.1"
     "@nuxt/kit" "^3.11.1"
-
-nuxt-locomotive-scroll@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/nuxt-locomotive-scroll/-/nuxt-locomotive-scroll-0.0.1.tgz#bea4c50fae06caa2eb3767711a6c0bf952a03201"
-  integrity sha512-5O2CufL3io+0rnwlFS9IO6ZuqbhfPq33M+NnjU0CG2Umbzk2LVIqvcFBJop+HPtryKM/7fCfFWyWqB5tnhLECQ==
-  dependencies:
-    "@nuxt/kit" "^3.11.2"
-    locomotive-scroll "^4.1.4"
 
 nuxt@^3.12.3:
   version "3.12.3"
@@ -6292,11 +6260,6 @@ smob@^1.0.0:
   resolved "https://registry.yarnpkg.com/smob/-/smob-1.5.0.tgz#85d79a1403abf128d24d3ebc1cdc5e1a9548d3ab"
   integrity sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==
 
-smoothscroll-polyfill@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
-  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
-
 source-map-js@^1.0.1, source-map-js@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
@@ -6395,7 +6358,16 @@ streamx@^2.15.0:
   optionalDependencies:
     bare-events "^2.2.0"
 
-"string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -6427,7 +6399,14 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -6656,11 +6635,6 @@ thenify-all@^1.0.0:
   integrity sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==
   dependencies:
     any-promise "^1.0.0"
-
-tiny-emitter@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-1.2.0.tgz#6dc845052cb08ebefc1874723b58f24a648c3b6f"
-  integrity sha512-rWjF00inHeWtT5UbQYAXoMI4hL6TRMqohuKCsODyPYYmfAxqfMnXLsIeNrbdPEkNxlk++rojVilTnI9IVmEBtA==
 
 tiny-inflate@^1.0.0, tiny-inflate@^1.0.3:
   version "1.0.3"
@@ -6992,16 +6966,6 @@ vary@^1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-virtual-scroll@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/virtual-scroll/-/virtual-scroll-1.5.2.tgz#cdc051135ea6a1ebaaecdd4a4f39b8ed807f0f53"
-  integrity sha512-7jDHwlKbHUho7CYU/HojE/VKFH8GV9P5fVWP2HCa7dRUOpVvwl93OBOKIIcb2mKd+vqsbVR/0zl0X70+3sUZqA==
-  dependencies:
-    bindall-standalone "^1.0.5"
-    lethargy "^1.0.2"
-    object-assign "^4.0.1"
-    tiny-emitter "^1.0.0"
-
 vite-hot-client@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/vite-hot-client/-/vite-hot-client-0.2.3.tgz#db52aba46edbcfa7906dbca8255fd35b9a9270b2"
@@ -7215,7 +7179,16 @@ wide-align@^1.1.2:
   dependencies:
     string-width "^1.0.2 || 2 || 3 || 4"
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
