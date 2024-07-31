@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    // baseURL: '/meer-sagor.github.io',
     head: {
       title: 'Meer Sagor',
       link: [
@@ -11,15 +10,10 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: {
         lang: 'en',
-         class:'h-full w-full'
       },
-      bodyAttrs:{
-        class:'h-full w-full'
-      }
     },
     rootTag: 'main',
     rootAttrs:{
-      class: 'h-full w-full',
       id: 'meer',
     }
   },
@@ -31,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/html-validator',
     '@nuxt/fonts',
+    '@vueuse/nuxt'
   ],
   colorMode: {
     preference: 'dark',
@@ -38,5 +33,8 @@ export default defineNuxtConfig({
   gsap: {
     provide: false,
     composables: true,
+    extraPlugins: {
+      scrollTrigger: true
+    }
   },
 });

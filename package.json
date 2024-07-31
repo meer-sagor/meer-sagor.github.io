@@ -20,6 +20,8 @@
   "devDependencies": {
     "@hypernym/nuxt-gsap": "^2.4.2",
     "@nuxt/eslint": "^0.3.13",
-    "@nuxtjs/html-validator": "^1.8.2"
+    "@nuxtjs/html-validator": "^1.8.2",
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0"
   }
 }

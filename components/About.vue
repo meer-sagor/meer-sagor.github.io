@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="h-full w-full">
+    <section class="h-screen bg-red-50">
         <h2 class="font-secondary text-[20vw] text-center">About</h2>
     </section>
 </template>
