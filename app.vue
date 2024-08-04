@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <NuxtPage/>
+   <lenis>
+      <NuxtPage />
+   </lenis>
 </template>
 
 <style>

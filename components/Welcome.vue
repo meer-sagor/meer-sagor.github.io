@@ -26,12 +26,12 @@ const initAnimation = () => {
       scrub: true,
     },
   });
-  tl.from('#sectionTarget', {
-    opacity: 0,
-    y: 200,
-    duration: 2,
-    delay: 1,
-  });
+  // tl.from('#sectionTarget', {
+  //   opacity: 0,
+  //   y: 200,
+  //   duration: 2,
+  //   delay: 1,
+  // });
   tl.from('#sectionScrollDown', {
     opacity: 0,
     x: 200,
