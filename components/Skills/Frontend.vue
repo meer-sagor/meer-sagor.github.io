@@ -7,7 +7,6 @@ const initAnimation = () => {
       start: 'top 100%',
       end: 'top 70%',
       scrub: true,
-      markers: true
     },
     y: -350,
     x: 10,

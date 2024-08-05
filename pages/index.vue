@@ -4,5 +4,5 @@
   <Welcome />
   <About />
   <Skills />
-  <section class="h-screen bg-slate-100">project</section>
+  <Projects/>
 </template>

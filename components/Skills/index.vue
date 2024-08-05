@@ -5,7 +5,7 @@ const initAnimation = () => {
     scrollTrigger: {
       trigger: '#skill-section',
       start: 'top 100%',
-      end: 'top 70%',
+      end: 'top 60%',
       scrub: true,
     },
     x: -500,
@@ -15,7 +15,7 @@ const initAnimation = () => {
         scrollTrigger: {
           trigger: '#skill-section',
           start: 'top 60%',
-          end: 'top 50%',
+          end: 'top 40%',
           scrub: true,
         },
         y: -200,
@@ -29,7 +29,7 @@ const initAnimation = () => {
     scrollTrigger: {
       trigger: '#skill-section',
       start: 'top 60%',
-      end: 'top 40%',
+      end: 'top 20%',
       scrub: true,
     },
     y: -350,
