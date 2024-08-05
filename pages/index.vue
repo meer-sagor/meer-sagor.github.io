@@ -1,11 +1,8 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
-    <Welcome/>
-    <About/>
-    <section class="h-screen grid place-items-center">
-        <h2 class="font-secondary text-[20vw] text-center">Skills</h2>
-    </section>
+  <Welcome />
+  <About />
+  <Skills />
+  <section class="h-screen bg-slate-100">project</section>
 </template>
