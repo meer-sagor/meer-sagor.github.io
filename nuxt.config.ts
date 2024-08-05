@@ -1,27 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    // baseURL: '/meer-sagor.github.io',
     head: {
       title: 'Meer Sagor',
+      meta: [
+        {
+          name: 'description',
+          content: 'meer sagor',
+        },
+      ],
       link: [
         {
-          rel: 'icon', type: 'image/x-icon', href:'/favicon.ico'
-        }
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico',
+        },
       ],
       htmlAttrs: {
         lang: 'en',
-         class:'h-full w-full'
       },
-      bodyAttrs:{
-        class:'h-full w-full'
-      }
     },
     rootTag: 'main',
-    rootAttrs:{
-      class: 'h-full w-full',
+    rootAttrs: {
       id: 'meer',
-    }
+    },
   },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
@@ -31,6 +33,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/html-validator',
     '@nuxt/fonts',
+    '@vueuse/nuxt',
+    'nuxt-lenis',
   ],
   colorMode: {
     preference: 'dark',
@@ -38,5 +42,8 @@ export default defineNuxtConfig({
   gsap: {
     provide: false,
     composables: true,
+    extraPlugins: {
+      scrollTrigger: true,
+    },
   },
 });
