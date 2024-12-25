@@ -6,7 +6,8 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          content: 'meer sagor',
+          content:
+            "I'm a dedicated JavaScript developer with expertise in Vue.js, React.js, Next.js, and Nuxt.js. With extensive experience in SaaS-based product development, I've successfully built and maintained applications used by businesses worldwide.",
         },
       ],
       link: [
