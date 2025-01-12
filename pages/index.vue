@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-  <Welcome />
+<HeroSection/>
   <About />
-  <Skills />
-  <Projects/>
+<!--  <Skills />-->
+<!--  <Projects/>-->
 </template>
