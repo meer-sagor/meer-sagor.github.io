@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         },
       ],
       htmlAttrs: {
-        lang: 'en',
+        lang: 'en'
       },
     },
     rootTag: 'main',
@@ -28,15 +28,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
-  modules: [
-    '@nuxt/ui',
-    '@hypernym/nuxt-gsap',
-    '@nuxt/eslint',
-    '@nuxtjs/html-validator',
-    '@nuxt/fonts',
-    '@vueuse/nuxt',
-    'nuxt-lenis',
-  ],
+  modules: ['@nuxt/ui', '@hypernym/nuxt-gsap', '@nuxt/eslint', '@nuxtjs/html-validator', '@nuxt/fonts', '@vueuse/nuxt', 'nuxt-lenis', '@nuxt/image'],
   colorMode: {
     preference: 'dark',
   },
