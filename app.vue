@@ -2,9 +2,12 @@
 </script>
 
 <template>
-   <lenis>
+  <NuxtLayout>
+    <lenis>
       <NuxtPage />
-   </lenis>
+    </lenis>
+  </NuxtLayout>
+
 </template>
 
 <style>

@@ -11,13 +11,13 @@
       <p class="mt-[8px] text-[1.5rem]">I enjoy the challenge of transforming complex design concepts into functional web applications and working collaboratively with other developers and designers.</p>
 
       <div class="flex gap-[12px] items-center mt-[16px]">
-        <NuxtLink to="https://www.facebook.com/meer.msagor" target="_blank" class="bg-primary-500 rounded-full size-[40px] block">
+        <NuxtLink to="https://www.facebook.com/meer.msagor" target="_blank" class="bg-primary-500 rounded-full size-[40px] block" aria-label="Facebook">
           <UIcon name="basil:facebook-solid" class="size-[40px]" />
         </NuxtLink>
-        <NuxtLink to="https://www.linkedin.com/in/meer-sagor" target="_blank" class="bg-primary-500 rounded-full size-[40px] flex justify-center items-center">
+        <NuxtLink to="https://www.linkedin.com/in/meer-sagor" target="_blank" class="bg-primary-500 rounded-full size-[40px] flex justify-center items-center" aria-label="Linkedin">
           <UIcon name="ri:linkedin-fill" class="size-[30px]" />
         </NuxtLink>
-        <NuxtLink to="https://www.github.com/meer-sagor" target="_blank" class="bg-primary-500 rounded-full size-[40px] flex justify-center items-center">
+        <NuxtLink to="https://www.github.com/meer-sagor" target="_blank" class="bg-primary-500 rounded-full size-[40px] flex justify-center items-center" aria-label="Github">
           <UIcon name="proicons:github" class="size-[30px]" />
         </NuxtLink>
       </div>
