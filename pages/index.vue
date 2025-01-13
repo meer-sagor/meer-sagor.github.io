@@ -3,8 +3,4 @@
 
 <template>
   <Introduction/>
-<!--  <HeroSection/>-->
-<!--  <About />-->
-  <!--  <Skills />-->
-  <!--  <Projects/>-->
 </template>
