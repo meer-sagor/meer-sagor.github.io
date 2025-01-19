@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const experiences = ref([
+import type {Experiences} from "~/@types/Experiences";
+
+const experiences = ref<Experiences[]>([
   {
     designation: 'Software Engineer L-1',
     startDate: 2024,
