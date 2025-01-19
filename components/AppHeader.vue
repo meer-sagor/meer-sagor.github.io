@@ -1,21 +1,30 @@
 <script lang="ts" setup>
-const navList = ref([{
-  name: 'Home',
-  to: '/',
-  icon: 'lucide:home',
-}, {
-  name: 'Works',
-  to: '/works',
-  icon: 'lucide:briefcase',
-},{
-  name: 'About',
-  to: '/about',
-  icon: 'lucide:user',
-}, {
-  name: 'Contact',
-  to: '/contact',
-  icon: 'lucide:mail',
-}])
+const navList = ref([
+  {
+    name: 'Home',
+    to: '/',
+    icon: 'lucide:home',
+  }, {
+    name: 'Works',
+    to: '/works',
+    icon: 'lucide:briefcase',
+  }, {
+    name: 'About',
+    to: '/about',
+    icon: 'lucide:user',
+  },
+  {
+    name: 'Story',
+    to: '/story',
+    icon: 'lucide:book',
+  },
+  // {
+  //   name: 'Contact',
+  //   to: '/contact',
+  //   icon: 'lucide:mail',
+  // }
+  // proicons:open-source
+])
 </script>
 
 <template>
