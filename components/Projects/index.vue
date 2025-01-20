@@ -46,9 +46,9 @@ const projects = ref<Projects[]>([
 
 <template>
   <div class="grid grid-cols-12 gap-[12px]">
-    <div v-for="work in projects" :key="work.name" class="col-span-6 space-y-[12px] border rounded-lg overflow-hidden self-start">
+    <div v-for="work in projects" :key="work.name" class="col-span-12 md:col-span-6 space-y-[12px] border rounded-lg overflow-hidden self-start">
       <NuxtImg v-if="work.thumbnail" :src="work.thumbnail" alt="Crowdfundly for Creators"/>
-      <div class="space-y-[12px] px-[24px] pb-[24px]" :class="`${!work.thumbnail && 'pt-[24px]'}`">
+      <div class="space-y-[12px] px-[16px] md:px-[24px] pb-[16px] md:pb-[24px]" :class="`${!work.thumbnail && 'pt-[16px] md:pt-[24px]'}`">
         <h2 class="flex items-center gap-[16px] font-bold text-[20px]">
           {{ work.name }}
 <!--          <UIcon name="lucide:external-link"/>-->

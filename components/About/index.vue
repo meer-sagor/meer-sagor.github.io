@@ -21,7 +21,7 @@
     <AboutExperience/>
     <Divider/>
 
-    <AboutSkills/>
+<!--    <AboutSkills/>-->
 
   </UContainer>
 </template>
