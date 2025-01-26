@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <UContainer as="section" class="space-y-3">
+  <UContainer as="section" class="space-y-3 mb-[40px]">
     <div class="text-center">
       <h1 class="text-3xl lg:text-4xl">About</h1>
       <p class="text-gray-400 italic ">A few words about me</p>
@@ -21,7 +21,7 @@
     <AboutExperience/>
     <Divider/>
 
-<!--    <AboutSkills/>-->
+    <AboutSkills/>
 
   </UContainer>
 </template>

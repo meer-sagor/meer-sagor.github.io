@@ -21,6 +21,7 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.2.11",
     "@iconify-json/lucide": "^1.2.22",
     "@nuxt/eslint": "^0.7.5",
     "@nuxtjs/html-validator": "^1.8.2",

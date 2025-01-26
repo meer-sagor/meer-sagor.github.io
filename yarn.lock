@@ -660,6 +660,13 @@
   dependencies:
     kleur "^4.0.0"
 
+"@iconify-json/devicon@^1.2.11":
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/@iconify-json/devicon/-/devicon-1.2.11.tgz#993a90a2a36e463ce338d3affb9aba44555601d8"
+  integrity sha512-siDWSFqmPKOYiMvgixqsZ/0rbUXae1M7gF14vefBtFuKXJkTvr4WPzbv1ARc7rqQlkU8XZPyH1edCXO4uToTyw==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/heroicons@^1.2.1":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@iconify-json/heroicons/-/heroicons-1.2.2.tgz#8e03d91655ea6a2d7e1283ba13df13eda50d8bd8"
