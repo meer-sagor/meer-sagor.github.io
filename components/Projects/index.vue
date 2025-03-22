@@ -45,7 +45,18 @@ const projects = ref<Projects[]>([
     technology: ['TypeScript', "NextJs", "RTK Query", "Redux", "Toolkit", "React Hook Form", "Tailwind CSS", "Material UI"],
     thumbnail: "works/paikari_management.png",
     liveLink: "https://hishabee.io/paikari"
-  }
+  },
+  {
+    name: 'Vivid Customs Admin',
+    description: "<ul>\n" +
+        "    <li><strong>Technology Stack: </strong>Proficient in PrimeVue, PrimeFlex</li>\n" +
+        "    <li><strong>E-Commerce Admin Panel:</strong> Developed a fully dynamic and functional e-commerce admin site.</li>\n" +
+        "    <li><strong>Payment Gateway:</strong> Support global payment methods like PayPal, Stripe</li>\n" +
+        "</ul>",
+    technology: ["NuxtJs 3", "VueUse", "TypeScript", "Chart.js", "PrimeVue", "PrimeFlex"],
+    thumbnail: "works/Vividcustoms-Admin-Panel.png",
+    liveLink: null
+  },
 ])
 </script>
 

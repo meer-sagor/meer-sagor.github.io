@@ -16,6 +16,8 @@ const socialLinks = ref([
     icon: 'proicons:github'
   }
 ])
+
+const openToAvailable = ref(false)
 </script>
 
 <template>
@@ -29,7 +31,7 @@ const socialLinks = ref([
         transforming complex design concepts into functional web applications and working collaboratively with other
         developers and designers.</p>
 
-      <div class="flex items-center rounded-full border border-white/10 bg-zinc-900/80 px-5 py-2 backdrop-blur-3xl mt-2"
+      <div v-if="openToAvailable" class="flex items-center rounded-full border border-white/10 bg-zinc-900/80 px-5 py-2 backdrop-blur-3xl mt-2"
            data-animate="" style="--stagger: 2;">
           <span class="relative flex size-3">
             <span class="absolute inline-flex size-full animate-ping rounded-full opacity-75 bg-green-600/80"></span>
@@ -40,7 +42,7 @@ const socialLinks = ref([
 
       <NuxtImg src="https://github-readme-stats.vercel.app/api/top-langs?username=meer-sagor&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="most use language" width="300" height="165"/>
 
-      <div class="flex justify-center gap-[12px] items-center mt-[16px]">
+      <div class="flex justify-center gap-[12px] items-center mt-[16px] mb-[20px]">
         <NuxtLink v-for="social in socialLinks" :key="social.to" :aria-label="social.name" class="bg-primary-500 rounded-full size-[40px] flex justify-center items-center" target="_blank" :to="social.to">
           <UIcon class="size-[30px]" :name="social.icon"/>
         </NuxtLink>

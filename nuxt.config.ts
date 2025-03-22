@@ -35,5 +35,11 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/seo', '@nuxt/ui', '@nuxt/eslint', '@nuxtjs/html-validator', '@nuxt/fonts', '@vueuse/nuxt', 'nuxt-lenis', '@nuxt/image'],
   colorMode: {
     preference: 'dark',
-  }
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/sitemap.xml", "/robots.txt"],
+    },
+  },
 });

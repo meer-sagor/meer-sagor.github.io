@@ -3,9 +3,15 @@ import type {Experiences} from "~/@types/Experiences";
 
 const experiences = ref<Experiences[]>([
   {
+    designation: 'Software Engineer',
+    startDate: 2025,
+    endDate: null,
+    company: 'Events In Minutes'
+  },
+  {
     designation: 'Software Engineer L-1',
     startDate: 2024,
-    endDate: null,
+    endDate: 2025,
     company: 'Jouleslabs'
   },
   {
