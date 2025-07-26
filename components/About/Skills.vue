@@ -64,8 +64,6 @@ const transformedSkills = computed(()=> {
         <div class="relative flex h-full flex-col">
           <div class="p-4">
             <UIcon :name="icon.icon" class="size-9" :title="icon.name"/>
-<!--            Vuejs-->
-<!--            <span alt="Nuxt logo" aria-hidden="true" aria-label="Nuxt logo" class="iconify i-custom:nuxt size-9" font-controlled="false"></span>-->
           </div>
         </div>
       </div>
