@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
   // @hypernym/nuxt-gsap
-  modules: ['@nuxtjs/seo', '@nuxt/ui', '@nuxt/eslint', '@nuxtjs/html-validator', '@nuxt/fonts', '@vueuse/nuxt', 'nuxt-lenis', '@nuxt/image'],
+  modules: ['@nuxtjs/seo', '@nuxt/ui', '@nuxt/eslint', '@nuxt/fonts', '@vueuse/nuxt', 'nuxt-lenis', '@nuxt/image'],
   colorMode: {
     preference: 'dark',
   },
