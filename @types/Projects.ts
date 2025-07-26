@@ -4,5 +4,5 @@ export type Projects = {
     description: string
     thumbnail?: string
     liveLink?: string
-    sourceLink?: string
+    sourceLink?: string | null
 }
