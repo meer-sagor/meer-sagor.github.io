@@ -15,18 +15,6 @@ const projects = ref<Projects[]>([
     liveLink: "https://eventsinminutes.com"
   },
   {
-    name: 'ReviewX',
-    description: "<ul>\n" +
-        "    <li><strong>Technology Stack:</strong> Proficient in Alpine.js and Symfony Twig</li>\n" +
-        "    <li><strong>Cloud-Based Plugin:</strong> WordPress plugin for streamlined review management.</li>\n" +
-        "    <li><strong>Frontend Architecture:</strong> Implemented Monorepo architecture for efficient code management.</li>\n" +
-        "    <li><strong>Payment Integration:</strong> Implementing global payment methods like Stripe and PayPal.</li>\n" +
-        "</ul>",
-    technology: ['Vuejs',"VueUse","TypeScript", "Vue-Query", "Pinia", "Alpine.js", "Twig", "Tailwind CSS", "Shell Script", "Docker"],
-    thumbnail: "works/woocommerce-reviewxs-plugin-with-multicriteria-support.png",
-    liveLink: "https://reviewx.io"
-  },
-  {
     name: 'Crowdfundly for Creators',
     description: "<ul>\n" +
         "    <li><strong>Technology Stack: </strong>Proficient in Vue.js (2 &amp; 3), Nuxt.js (2 &amp; 3), Vuex, and Pinia.</li>\n" +
@@ -39,6 +27,32 @@ const projects = ref<Projects[]>([
     liveLink: "https://crowdfundly.com"
   },
   {
+    name: 'ReviewX',
+    description: "<ul>\n" +
+        "    <li><strong>Technology Stack:</strong> Proficient in Alpine.js and Symfony Twig</li>\n" +
+        "    <li><strong>Cloud-Based Plugin:</strong> WordPress plugin for streamlined review management.</li>\n" +
+        "    <li><strong>Frontend Architecture:</strong> Implemented Monorepo architecture for efficient code management.</li>\n" +
+        "    <li><strong>Payment Integration:</strong> Implementing global payment methods like Stripe and PayPal.</li>\n" +
+        "</ul>",
+    technology: ['Vuejs',"VueUse","TypeScript", "Vue-Query", "Pinia", "Alpine.js", "Twig", "Tailwind CSS", "Shell Script", "Docker"],
+    thumbnail: "works/woocommerce-reviewxs-plugin-with-multicriteria-support.png",
+    liveLink: "https://reviewx.io"
+  },
+
+
+  {
+    name: 'Distributor Management (Paikari)',
+    description: "<ul>\n" +
+        "    <li><strong>Technology Stack:</strong> Proficient in RTK Query &amp; React Hook Form</li>\n" +
+        "</ul>",
+    technology: ['TypeScript', "NextJs", "RTK Query", "Redux", "Toolkit", "React Hook Form", "Tailwind CSS", "Material UI"],
+    thumbnail: "works/paikari_management.png",
+    liveLink: "https://hishabee.io/paikari"
+  },
+
+
+
+  {
     name: 'Vivid Customs',
     description: "<ul>\n" +
         "    <li><strong>Technology Stack: </strong>Proficient in FabricJs</li>\n" +
@@ -49,15 +63,7 @@ const projects = ref<Projects[]>([
     thumbnail: "works/StartDesigning.png",
     liveLink: "https://vividcustoms.com"
   },
-  {
-    name: 'Distributor Management (Paikari)',
-    description: "<ul>\n" +
-        "    <li><strong>Technology Stack:</strong> Proficient in RTK Query &amp; React Hook Form</li>\n" +
-        "</ul>",
-    technology: ['TypeScript', "NextJs", "RTK Query", "Redux", "Toolkit", "React Hook Form", "Tailwind CSS", "Material UI"],
-    thumbnail: "works/paikari_management.png",
-    liveLink: "https://hishabee.io/paikari"
-  },
+
   {
     name: 'Vivid Customs Admin',
     description: "<ul>\n" +
