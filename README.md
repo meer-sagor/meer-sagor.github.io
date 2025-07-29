@@ -1,5 +1,7 @@
 # Personal Portfolio - Meer Sagor
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![Portfolio Preview](/public/portfolio_preview.png)
 
 ## 👨‍💻 About Me
@@ -98,6 +100,10 @@ I enjoy the challenge of transforming complex design concepts into functional we
 - **Facebook**: [meer.msagor](https://www.facebook.com/meer.msagor)
 - **LinkedIn**: [meer-sagor](https://www.linkedin.com/in/meer-sagor)
 - **GitHub**: [meer-sagor](https://www.github.com/meer-sagor)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
