@@ -4,7 +4,7 @@ export default defineAppConfig({
         gray: 'neutral',
 
         container:{
-            constrained: 'max-w-4xl'
+            constrained: 'max-w-6xl'
         }
     }
 })

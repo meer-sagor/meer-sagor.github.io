@@ -18,8 +18,17 @@
         I enjoy the challenge of transforming complex design concepts into functional web applications and working collaboratively with other developers and designers.
       </p>
     </div>
+
+    <Divider/>
+    <div>
+      <ContactTitleLink/>
+    </div>
+    <Divider/>
+
+
     <AboutExperience/>
     <Divider/>
+
 
     <AboutSkills/>
 
