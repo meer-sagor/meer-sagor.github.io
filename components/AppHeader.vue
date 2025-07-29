@@ -8,15 +8,16 @@ const navList = ref([
     name: 'Works',
     to: '/works',
     icon: 'lucide:briefcase',
-  }, {
-    name: 'About',
-    to: '/about',
-    icon: 'lucide:user',
   },
   {
     name: 'Open Source',
     to: '/open-source',
     icon: 'proicons:open-source',
+  },
+  {
+    name: 'About',
+    to: '/about',
+    icon: 'lucide:user',
   },
   {
     name: 'Story',
