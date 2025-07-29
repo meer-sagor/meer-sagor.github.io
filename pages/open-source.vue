@@ -1,5 +1,98 @@
 <script setup lang="ts">
+import type { NpmPackageData, OpenSource } from "~/@types/OpenSource";
 
+// Define your open source projects with their NPM package names
+const openSourceProjects = ref<OpenSource[]>([
+  {
+    name: 'Wavesurfer Vue',
+    description: "A Vue.js wrapper for WaveSurfer.js, providing easy integration of audio waveform visualization in Vue applications. Features include customizable waveforms, real-time audio playback, and responsive design.",
+    npmPackage: "@meersagor/wavesurfer-vue",
+    githubRepo: "https://github.com/meer-sagor/wavesurfer-vue",
+    documentation: null,
+    weeklyDownloads: 0,
+    version: "0.0.0",
+    license: "MIT",
+    lastUpdated: "",
+    author: "",
+    keywords: []
+  },
+  {
+    name: 'JS Composable',
+    description: "JS-Composable is a lightweight utility library designed to provide practical helper methods that simplify real-world use cases. Tailored for Node.js projects, it includes a versatile set of functions to streamline repetitive tasks and support common development needs.",
+    npmPackage: "@meersagor/js-composable",
+    githubRepo: "https://github.com/meer-sagor/js-composable",
+    documentation: null,
+    weeklyDownloads: 0,
+    version: "0.0.0",
+    license: "MIT",
+    lastUpdated: "",
+    author: "",
+    keywords: []
+  },
+  {
+    name: 'Gearup CLI',
+    description: "The gearup CLI is a tool designed to simplify and speed up the setup process for development environments. It automates the installation of essential tools, saving time and reducing manual effort.",
+    npmPackage: "gearup-cli",
+    githubRepo: "https://github.com/meer-sagor/GearUp-Cli",
+    documentation: null,
+    weeklyDownloads: 0,
+    version: "0.0.0",
+    license: "MIT",
+    lastUpdated: "",
+    author: "",
+    keywords: []
+  },
+  // Add more open source projects here as you create them
+])
+
+// Fetch data for all packages using Promise.all with useAsyncData
+const { data: npmPackagesData, pending, error } = await useAsyncData(
+  'npm-packages',
+  async () => {
+    const packagesWithNpmData = await Promise.all(
+      openSourceProjects.value.map(async (project) => {
+        if (!project.npmPackage) return { project, npmData: null }
+        
+        try {
+          const npmData = await $fetch<NpmPackageData>(`/api/npm-package/${encodeURIComponent(project.npmPackage)}`)
+          return { project, npmData }
+        } catch (error) {
+          console.warn(`Failed to fetch NPM data for ${project.npmPackage}:`, error)
+          return { project, npmData: null }
+        }
+      })
+    )
+    return packagesWithNpmData
+  }
+)
+
+// Computed property to merge static and dynamic data
+const openSourceProjectsWithData = computed(() => {
+  if (!npmPackagesData.value) return openSourceProjects.value
+  
+  return npmPackagesData.value.map(({ project, npmData }) => {
+    if (!npmData) return project
+    
+    return {
+      ...project,
+      weeklyDownloads: npmData.weeklyDownloads || 0,
+      version: npmData.version || "0.0.0",
+      license: npmData.license || "MIT",
+      lastUpdated: npmData.lastUpdated || "",
+      description: project.description || npmData.description || "",
+      author: npmData.author || "",
+      keywords: npmData.keywords || [],
+      // Extract GitHub repo from NPM repository field if not already set
+      githubRepo: project.githubRepo || (npmData.repository ? npmData.repository.replace('git+https://github.com/', 'https://github.com/').replace('.git', '') : ''),
+      // Use NPM homepage as documentation if not already set
+      documentation: project.documentation || npmData.homepage || `https://www.npmjs.com/package/${project.npmPackage}`
+    }
+  })
+})
+
+// Loading and error states
+const isLoading = computed(() => pending.value)
+const hasError = computed(() => !!error.value)
 </script>
 
 <template>
@@ -9,7 +102,11 @@
       <p class="text-gray-400 italic">My contributions to the open-source community</p>
     </div>
     <Divider/>
-    <OpenSource class=""/>
+    <OpenSource 
+      :openSourceProjectsWithData="openSourceProjectsWithData" 
+      :isLoading="isLoading" 
+      :hasError="hasError" 
+    />
     
     <!-- Live data note -->
     <div class="text-center mt-8">
@@ -21,22 +118,7 @@
     
     <!-- Contribution Section -->
     <Divider/>
-    <div class="text-center space-y-4">
-      <h2 class="text-2xl font-semibold">Want to Contribute?</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">
-        I believe in the power of open source and community collaboration. If you find any of my packages useful or want to contribute improvements, feel free to check out the repositories and submit pull requests!
-      </p>
-      <div class="flex justify-center gap-4">
-        <NuxtLink to="/contact" class="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">
-          <UIcon name="lucide:mail" class="w-5 h-5" />
-          Get in Touch
-        </NuxtLink>
-        <NuxtLink to="https://github.com/meer-sagor" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-600 text-gray-300 rounded-lg hover:bg-gray-800 transition-colors">
-          <UIcon name="lucide:github" class="w-5 h-5" />
-          View GitHub
-        </NuxtLink>
-      </div>
-    </div>
+    <OpenSourceContributionSection />
   </UContainer>
 </template>
 

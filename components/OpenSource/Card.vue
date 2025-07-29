@@ -21,8 +21,10 @@ const props = defineProps<Props>()
     </div>
     
     <div class="space-y-[12px] px-[16px] md:px-[24px] pb-[16px] md:pb-[24px]">
-      <h2 class="flex items-center gap-[16px] font-bold text-[20px]">
-        {{ project.name }}
+      <div class="flex items-center justify-between gap-[16px]">
+        <h2 class="flex items-center  font-bold text-[20px]">
+          {{ project.name }}
+        </h2>
         <div class="flex gap-2">
           <NuxtLink :aria-label="`View ${project.name} on NPM`"
                     :to="`https://www.npmjs.com/package/${project.npmPackage}`" target="_blank"
@@ -38,7 +40,8 @@ const props = defineProps<Props>()
             <UIcon name="lucide:external-link" class="w-5 h-5" />
           </NuxtLink>
         </div>
-      </h2>
+      </div>
+
       
       <!-- Package name and author with animations -->
       <div class="flex flex-wrap gap-2 text-xs text-gray-400">

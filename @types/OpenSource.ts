@@ -10,7 +10,7 @@ export type OpenSource = {
     lastUpdated?: string
     author?: string
     keywords?: string[]
-} 
+}
 
 export interface NpmPackageData {
     name: string

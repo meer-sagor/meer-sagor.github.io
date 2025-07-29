@@ -14,15 +14,15 @@ const navList = ref([
     icon: 'lucide:user',
   },
   {
+    name: 'Open Source',
+    to: '/open-source',
+    icon: 'proicons:open-source',
+  },
+  {
     name: 'Story',
     to: '/story',
     icon: 'lucide:book',
   },
-  {
-    name: 'Open Source',
-    to: '/open-source',
-    icon: 'proicons:open-source',
-  }
 ])
 </script>
 
