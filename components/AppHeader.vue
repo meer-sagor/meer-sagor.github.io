@@ -19,11 +19,10 @@ const navList = ref([
     icon: 'lucide:book',
   },
   // {
-  //   name: 'Contact',
-  //   to: '/contact',
-  //   icon: 'lucide:mail',
+  //   name: 'Open Source',
+  //   to: '/open-source',
+  //   icon: 'proicons:open-source',
   // }
-  // proicons:open-source
 ])
 </script>
 

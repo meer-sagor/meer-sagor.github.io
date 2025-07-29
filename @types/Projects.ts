@@ -3,6 +3,6 @@ export type Projects = {
     technology: string[]
     description: string
     thumbnail?: string
-    liveLink?: string
+    liveLink?: string | null
     sourceLink?: string | null
 }
