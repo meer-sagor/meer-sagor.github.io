@@ -4,6 +4,7 @@ const skillIcons = ref([
   "devicon:typescript",
   "devicon:react",
   "devicon:nextjs",
+  "devicon:astro",
   "devicon:vuejs",
   "devicon:nuxtjs",
   "devicon:redux",
