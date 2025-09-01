@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { NpmPackageData, OpenSource } from "~/@types/OpenSource";
+import type {OpenSource } from "~/@types/OpenSource";
+import { fetchNpmPackageData } from "~/utils/npmApi";
 
 // Define your open source projects with their NPM package names
 const openSourceProjects = ref<OpenSource[]>([
@@ -45,24 +46,23 @@ const openSourceProjects = ref<OpenSource[]>([
   // Add more open source projects here as you create them
 ])
 
-// Fetch data for all packages using Promise.all with useAsyncData
-const { data: npmPackagesData, pending, error } = await useAsyncData(
+// Fetch data for all packages using Promise.all with useLazyAsyncData for client-side fetching
+const { data: npmPackagesData, pending, error, refresh } = await useLazyAsyncData(
   'npm-packages',
   async () => {
     const packagesWithNpmData = await Promise.all(
       openSourceProjects.value.map(async (project) => {
         if (!project.npmPackage) return { project, npmData: null }
         
-        try {
-          const npmData = await $fetch<NpmPackageData>(`/api/npm-package/${encodeURIComponent(project.npmPackage)}`)
-          return { project, npmData }
-        } catch (error) {
-          console.warn(`Failed to fetch NPM data for ${project.npmPackage}:`, error)
-          return { project, npmData: null }
-        }
+        const npmData = await fetchNpmPackageData(project.npmPackage)
+        return { project, npmData }
       })
     )
     return packagesWithNpmData
+  },
+  {
+    server: false, // This ensures the data is fetched on the client-side
+    default: () => null
   }
 )
 
@@ -93,6 +93,11 @@ const openSourceProjectsWithData = computed(() => {
 // Loading and error states
 const isLoading = computed(() => pending.value)
 const hasError = computed(() => !!error.value)
+
+// Function to manually refresh data (optional)
+const refreshData = () => {
+  refresh()
+}
 </script>
 
 <template>
@@ -114,6 +119,16 @@ const hasError = computed(() => !!error.value)
         <UIcon name="lucide:zap" class="w-4 h-4 inline mr-1" />
         Data is fetched live from NPM registry
       </p>
+      <UButton 
+        @click="refreshData" 
+        :loading="isLoading"
+        variant="ghost" 
+        size="sm" 
+        class="mt-2"
+      >
+        <UIcon name="lucide:refresh-cw" class="w-4 h-4 mr-1" />
+        Refresh Data
+      </UButton>
     </div>
     
     <!-- Contribution Section -->
