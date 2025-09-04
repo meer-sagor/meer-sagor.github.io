@@ -1,9 +1,5 @@
 # Personal Portfolio - Meer Sagor
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-![Portfolio Preview](/public/portfolio_preview.png)
-
 ## 👨‍💻 About Me
 
 > **"The efficiency of one, the talent of three. Why look elsewhere?"**
@@ -67,7 +63,7 @@ I enjoy the challenge of transforming complex design concepts into functional we
 - **Technology Stack**: Vue.js (2 & 3), Nuxt.js (2 & 3), Vuex, Pinia, VueUse, TypeScript, Vue-Query, Chart.js, SCSS, Tailwind CSS, Shell Script, Docker
 - **Features**:
   - Bridge setup connecting two applications into a unified system
-  - SaaS-based cloud delivery on subscription model
+  - SaaS-based cloud delivery on a subscription model
   - Global payment methods integration (Stripe and PayPal)
 
 ### 3. **Vivid Customs** - E-Commerce Platform
@@ -97,14 +93,8 @@ I enjoy the challenge of transforming complex design concepts into functional we
 
 ## 🌐 Connect With Me
 
+- **Portfolio**: [Meer Sagor](https://www.meersagor.com)
 - **Facebook**: [meer.msagor](https://www.facebook.com/meer.msagor)
 - **LinkedIn**: [meer-sagor](https://www.linkedin.com/in/meer-sagor)
 - **GitHub**: [meer-sagor](https://www.github.com/meer-sagor)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-*Built with ❤️ using Nuxt.js, Vue.js, and modern web technologies*
